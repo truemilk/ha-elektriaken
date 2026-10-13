@@ -1,0 +1,16 @@
+{
+  "domain": "elektriaken",
+  "name": "Elektriaken",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["http", "websocket_api"],
+  "after_dependencies": ["lovelace"],
+  "documentation": "https://github.com/truemilk/ha-elektriaken",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/truemilk/ha-elektriaken/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0"
+}
+

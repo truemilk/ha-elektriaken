@@ -1,0 +1,48 @@
+{
+  "title": "Elektriaken",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Elektriaken",
+        "description": "Configure Estonia's Elering day-ahead prices.",
+        "data": {
+          "vat_rate": "VAT rate",
+          "resolution": "Sensor resolution",
+          "duration_minutes": "Default cheapest-window duration"
+        },
+        "data_description": {
+          "vat_rate": "Percentage added to the market price.",
+          "resolution": "Use native 15-minute prices or hourly averages.",
+          "duration_minutes": "Length of the window selected by the best-window sensor."
+        }
+      }
+    },
+    "abort": { "single_instance_allowed": "Only one Elektriaken instance can be configured." },
+    "error": { "invalid_duration": "The window duration must be divisible by the selected resolution." }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Elektriaken options",
+        "data": {
+          "vat_rate": "VAT rate",
+          "resolution": "Sensor resolution",
+          "duration_minutes": "Default cheapest-window duration"
+        },
+        "data_description": {
+          "vat_rate": "Percentage added to the market price.",
+          "resolution": "Use native 15-minute prices or hourly averages.",
+          "duration_minutes": "Length of the window selected by the best-window sensor."
+        }
+      }
+    },
+    "error": { "invalid_duration": "The window duration must be divisible by the selected resolution." }
+  },
+  "entity": {
+    "sensor": {
+      "current_price": { "name": "Current price" },
+      "best_window": { "name": "Best window" }
+    }
+  }
+}
+

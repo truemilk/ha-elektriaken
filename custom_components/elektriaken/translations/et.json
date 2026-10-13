@@ -1,0 +1,48 @@
+{
+  "title": "Elektriaken",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Elektriakna seadistamine",
+        "description": "Seadista Eesti Eleringi järgmise päeva elektrihinnad.",
+        "data": {
+          "vat_rate": "Käibemaksumäär",
+          "resolution": "Anduri samm",
+          "duration_minutes": "Soodsaima ajavahemiku vaikepikkus"
+        },
+        "data_description": {
+          "vat_rate": "Turuhinnale lisatav protsent.",
+          "resolution": "Kasuta 15-minutilisi hindu või tunni keskmisi.",
+          "duration_minutes": "Ajavahemik, mille parima aja andur valib."
+        }
+      }
+    },
+    "abort": { "single_instance_allowed": "Seadistada saab ainult ühe Elektriakna." },
+    "error": { "invalid_duration": "Ajavahemiku pikkus peab jaguma valitud sammuga." }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Elektriakna valikud",
+        "data": {
+          "vat_rate": "Käibemaksumäär",
+          "resolution": "Anduri samm",
+          "duration_minutes": "Soodsaima ajavahemiku vaikepikkus"
+        },
+        "data_description": {
+          "vat_rate": "Turuhinnale lisatav protsent.",
+          "resolution": "Kasuta 15-minutilisi hindu või tunni keskmisi.",
+          "duration_minutes": "Ajavahemik, mille parima aja andur valib."
+        }
+      }
+    },
+    "error": { "invalid_duration": "Ajavahemiku pikkus peab jaguma valitud sammuga." }
+  },
+  "entity": {
+    "sensor": {
+      "current_price": { "name": "Praegune hind" },
+      "best_window": { "name": "Parim ajavahemik" }
+    }
+  }
+}
+
